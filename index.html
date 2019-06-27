@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Local Individual</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Disaster Control System</a>
+            <a href="#!" class="brand-logo left" id="name"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                
+                <li>
+                        <a class="waves-effect waves-light btn"><span class="tick" id="tickmark">
+                                <span class="status">Status</span>
+                                
+                            </span></a>
+                </li>
+                <li><a class="modal-trigger" href="#donateBlood">Donate Blood</a></li>
+                <div id="donateBlood" class="modal">
+                    <div class="modal-content">
+                      <div class="row">
+    
+      <div class="row">
+       
+        <div class="input-field col s12">
+          <input id="donorName" type="text" class="validate">
+          <label for="donorName">Name</label>
+        </div>
+      </div>
+
+      <div class="row">
+       
+        <div class="input-field col s12">
+            <select>
+              <option value="" default selected>Blood Group</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="AB+">AB+</option>
+            </select>
+            <!-- <label>Materialize Select</label> -->
+          </div>
+      </div>
+
+      <div class="row">
+       
+        <div class="input-field col s12">
+          <input id="bloodGroupNameContact" type="text" class="validate">
+          <label for="bloodGroupNameContact">Contact No.</label>
+        </div>
+      </div>
+
+      <button class="btn ">Submit</button>
+   
+    
+    
+      
+   
+  </div>
+                    </div>
+                    
+                  </div>
+                <li><a href="#footer">Missing Persons</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal HTML embedded directly into document -->
+
+
+    <!-- Link to open the modal -->
+
+
+
+
+
+    <div class="data"
+        style="display: flex;justify-content:center; flex-direction: column; align-content: center; align-items: center;">
+
+        <div class="dataFetch" style="margin-right: 30px;">
+            Current Temperature: 32 degree
+        </div>
+        <!-- <div class="dataFetch">
+            Land Vibration: 10 degree
+        </div> -->
+    </div>
+
+    <div class="row">
+
+        <div class="col s12 m6">
+
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator"
+                        src="https://www.tripsavvy.com/thmb/XXJrok6ZDpA67FvX1OH1odCTsus=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-590496995-565c905f5f9b5835e47660f8.jpg"
+                        height="450">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Report Disasters<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a href="#">Click here</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                    
+                        <div class = "row">
+
+                         <div class="input-field " class="col s12">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Village Name</label>
+        </div>
+
+
+        <div class="input-field " class="col s12">
+                        <input type="text" name="userreport" id ="userreport" class="problemName validate">
+                        <label for="userreport">Issue</label>
+                        </div>
+                        <button class="submitReport btn" style="width:100%"> Submit Report</button>
+
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator"
+                        src="https://cdn.prod-carehubs.net/n1/802899ec472ea3d8/uploads/2017/07/shutterstock_273577295-1024x822.jpg"
+                        height="450px">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Request Blood<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a href="#">Search</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+
+                    <div class="row">
+                       
+
+
+                         <div class="input-field col s12 ">
+          <input id="last_names" type="text" class="validate">
+          <label for="last_names">Person name</label>
+        </div>
+
+
+            <div class="input-field col s12">
+                        <input type="text" name="bloodGroup" class="bloodGroup" id="blood">
+                        <label for="blood">Blood Group</label>
+                    </div>
+                        <button class="bloodRequest btn" style="width: 100%;margin-bottom: 20px;">Request Blood</button>
+
+<h4>Available Donors</h4>
+                        <div class="loadLater">
+                            <ul class="load">
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+       
+            
+
+
+
+        
+        <div class="missing-persons-container" id ="missing-persons-container" class="row">
+
+            <h3 style="text-align: center">Missing persons</h3>
+            <div class="card col s12 m4 l2"  style="margin-right: 30px; padding-top: 30px;">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBT7p0Pf1Cua06aUuhZdFX60YSmh-FOq-UYbNJ9v2_PkgK6ycjwA"
+                        width="200px" height="246px">
+                </div>
+                <div class="card-content">
+                    <span class="card-title  grey-text text-darken-4">Add Person</span>
+                   </div>
+                
+                   <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Add Person<i class="material-icons right">close</i></span>
+                    <div class="row">
+                        <div class="col s12 input-field">
+                            <input type="text" name="bloodGroup123" class="bloodGroup123" id="blood123">
+                        <label for="blood123">Name</label>
+                        </div>
+                        <div class="col s12 input-field">
+                            <input type="text" name="bloodGroup1234" class="bloodGroup1234" id="blood1234">
+                        <label for="blood123">Location</label>
+                        </div>
+                        <div class="col s12 input-field">
+                            <input type="number" name="blood12345" class="blood12345" id="blood12345">
+                            <label for="blood12345">Contact No.</label>
+                        </div>
+
+                        <button class="btn pink">Submit</button>
+                    </div>
+                  </div>
+
+            </div>
+            
+            <!-- <div >
+            <div>
+                <img src = "http://rameshkharbuja.com.np/wp-content/uploads/2018/09/nuwakot.jpg" width="200px" height="200px" style="display: inline;">
+            <h4 style="text-align: center">Name</h4>
+            <h5>Location: </h5>
+            <h5>Contact: </h5>
+        </div> 
+        <div class="float:right;">
+            <img src = "http://rameshkharbuja.com.np/wp-content/uploads/2018/09/nuwakot.jpg" width="200px" height="200px" style="display: inline;">
+        <h4 style="text-align: center">Name</h4>
+        <h5>Location: </h5>
+        <h5>Contact: </h5>
+    </div>  
+        </div> -->
+        </div>
+
+        <div id="footer"></div>
+
+
+
+        <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
